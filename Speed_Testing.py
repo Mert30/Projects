@@ -1,4 +1,5 @@
 import speedtest
+import tkinter as tk
 from tkinter import *
 
 def Analyze():
@@ -12,11 +13,12 @@ def Analyze():
 def Exit():
     exit()
     
-root = Tk()
+root = tk.Tk()
 root.geometry("310x250")
 root.resizable(False,False)
 root.title("Internet Speed Test")
 root.config(bg = "#FAEBD7")
+root.eva("tk::PlaceWindow . center")
 
 Label(root, text = "Internet Speed Test", font = ("Arial,bold", 22), bg = "#87CEFA", fg = "Black", width = 30).pack(pady = 10)
 
